@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/bottom_shee"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_alignParentLeft="true"
+    android:fitsSystemWindows= "true"
+    android:scrollbars="none"
+    android:layout_alignParentBottom="true"
+    android:background="@android:color/transparent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:id="@+id/sd"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/radius"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="36dp"
+            android:layout_marginRight="16dp"
+            android:text="@string/Gorod"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <EditText
+            android:id="@+id/edcity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/edittextstyle"
+            android:ellipsize="start"
+            android:inputType="text"
+            android:paddingLeft="16dp"
+            android:paddingTop="19dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="19dp"
+            android:textSize="25sp" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="230dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="60dp"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/btnback"
+                    android:layout_width="48dp"
+                    android:layout_height="48dp"
+                    android:layout_alignParentStart="true"
+                    android:layout_gravity="start"
+                    android:layout_marginStart="0dp"
+                    android:background="@drawable/btnback"
+                    android:gravity="center">
+
+                    <RelativeLayout
+                        android:id="@+id/shape"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/shape"
+                        android:gravity="center" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/buttons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/buttons"
+                    android:gravity="center"
+                    android:onClick="dialogs"
+                    tools:ignore="RedundantNamespace,UsingOnClickInXml">
+
+                    <TextView
+                        android:id="@+id/txtbtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/btnNext"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="16sp" />
+                </RelativeLayout>
+            </RelativeLayout>
+        </ScrollView>
+
+
+    </LinearLayout>
+</RelativeLayout>
